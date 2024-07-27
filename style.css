@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+#display{
+   width: 100%;
+   padding: 20px;
+   font-size: 5rem;
+   text-align: left;
+   border: none;
+   color: white;
+   background-color: hsl(0, 0%, 20%); 
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+#keys button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color:hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#keys button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+#keys button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+
+#keys button.oprater{
+    background-color: hsl(26, 93%, 43%);
+}
+
+#keys button.oprater:hover{
+    background-color: hsl(26, 93%, 53%);
+}
+
+#keys button.oprater:active{
+    background-color: hsl(26, 93%, 63%);
+}
+@media screen and (max-width: 420px){
+    #calculator{
+        width:100%;
+    }
+    #keys{
+       max-width: 355px;
+        gap: 10px;
+        justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+
+
+    }
+    #display{
+        max-width: 355px;
+    }
+    #keys button{
+        width: 50px;
+        height: 50px;
+        
+    }
+}
